@@ -1,0 +1,33 @@
+<section class="main-container">
+   
+    
+    <!-- Balance Display Section -->
+    
+    <div class="balance-section">
+        <h1>Welcome, what would you like to do?</h1>
+        <div class="account-info">  
+            <div class="balance-display">
+                <div>
+                Current Balance:
+                <span class="balance">
+                    ${{currentBalance}}
+                </span>
+                </div>
+                <div>
+                    Account No : {{accountNo}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Action Buttons Section -->
+    <div class="select">
+        <button class="btn" [routerLink]="['/deposit', customerId]" [queryParams]="{accountNo: accountNo}">Deposit</button>
+        <button class="btn" [routerLink]="['/withdraw', customerId]" [queryParams]="{accountNo: accountNo}">Withdraw</button>
+        <button class="btn purple" [routerLink]="['/transfer', customerId]" [queryParams]="{accountNo: accountNo}">Transfer</button>
+         <button class="btn" [routerLink]="['/create-account', customerId]">Create New Account</button>
+         <button class="btn purple" [routerLink]="['/view-transactions', customerId]" [queryParams]="{accountNumber: accountNo}">View All Transactions</button>
+         <button class="btn" [routerLink]="['/account-info', customerId]">View First Account Info</button>
+    </div>
+   
+</section>

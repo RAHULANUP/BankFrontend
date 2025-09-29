@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.transactions-container {
+    font-family:"Inter";
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+    font-size:2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.account-info {
+  text-align:right;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+.no-transactions {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid rgb(199, 199, 180);
+}
+
+.transactions-table th {
+  background-color: #741898;
+  font-weight: 600;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+.transactions-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.transaction-credit {
+  color: rgb(21, 104, 41);
+  font-weight: 600;
+}
+
+.transaction-debit {
+  color: rgb(180, 15, 30);
+  font-weight: 600;
+}
+
+.amount {
+  font-weight: 600;
+  text-align: right;
+}
+
+.amount.positive {
+  color: rgb(21, 104, 41);
+}
+
+.amount.negative {
+  color: rgb(180, 15, 30);
+}
+
+.transaction-date {
+  color: #666;
+  font-size: 14px;
+}
+
+.transaction-id {
+  font-family: monospace;
+  color: #666;
+}
+
+.refresh-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.refresh-btn:hover {
+  background-color: #0056b3;
+}
+
+.refresh-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .transactions-container {
+    padding: 10px;
+  }
+  
+  .transactions-table {
+    font-size: 14px;
+  }
+  
+  .transactions-table th,
+  .transactions-table td {
+    padding: 8px 10px;
+  }
+}
