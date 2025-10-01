@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter";
+    padding: 0 3.5rem;
+}
+
+nav h1 {
+    color: #000000;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcome-text {
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.auth-section {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login, .btn-register, .btn-logout {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-login {
+    background: white;
+    color: #7b2cbf;
+    border: 1px solid #7b2cbf;
+}
+
+.btn-login:hover {
+    background: #7b2cbf;
+    color: white;
+}
+
+.btn-register {
+    background: #7b2cbf;
+    color: white;
+    border: 1px solid #7b2cbf;
+}
+
+.btn-register:hover {
+    background: #6a1b9a;
+}
+
+.btn-logout {
+    background: #dc3545;
+    color: white;
+    border: 1px solid #dc3545;
+}
+
+.btn-logout:hover:not(:disabled) {
+    background: #c82333;
+}
+
+.btn-logout:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.spinner {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffffff3d;
+    border-top: 2px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

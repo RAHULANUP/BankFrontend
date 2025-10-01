@@ -1,0 +1,29 @@
+<nav>
+    <h1>Bank8</h1>
+    <div class="nav-actions">
+        @if(this.isLoggedIn()) {
+            <div class="user-section">
+                <span class="welcome-text">Welcome, {{ currentUser?.customerName }}!</span>
+                <button 
+                    class="btn-logout" 
+                    (click)="logout()" 
+                    [disabled]="isLoading"
+                >   
+                    @if(isLoading) {
+                        <span class="spinner"></span>
+                    }
+                    {{ isLoading ? 'Signing Out...' : 'Logout' }}
+                </button>
+            </div>
+        } @else {
+            <div class="auth-section">
+                <button class="btn-login" (click)="goToLogin()">
+                    SignIn
+                </button>
+                <button class="btn-register" (click)="goToRegister()">
+                    SignUp
+                </button>
+            </div>
+        }
+    </div>
+</nav>
