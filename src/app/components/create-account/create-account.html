@@ -1,9 +1,0 @@
-<section class="main-container">
-    <div class="createAccount">
-        <h1>Create an account</h1>
-        <form [formGroup]="accountForm" (ngSubmit)="onSubmit()">
-            <input type="text" placeholder="Initial deposit" formControlName="initialBalance"/>
-            <button type="submit" [disabled]="!accountForm.valid">Create Account</button>
-        </form>
-    </div>
-</section>
