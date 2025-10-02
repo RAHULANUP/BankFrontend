@@ -15,17 +15,19 @@
 h1{
     margin:1rem 0;
     text-align:center;
+    font-size: 3rem;
 }
 input{
     margin:1rem;
     width:25rem;
-    padding:1rem;
+    padding:1.5rem;
+
 }
 button{
     cursor:pointer;
     border: none;
     margin:1rem;
-    padding:1rem;
+    padding:1.5rem;
     background-color: rgb(121,18,181);
     color:rgb(255,255,255);
 }
