@@ -16,14 +16,15 @@
 h1{
     text-align:center;
     margin:1rem 0;
+    font-size: 3rem;
 }
 input{
     width:25rem;
     margin:1rem;
-    padding:1rem;
+    padding:1.5rem;
 }
 button{
-    padding:1rem;
+    padding:1.5rem;
     margin:1rem;
     color:rgb(255,255,255);
     background-color:rgb(121,39,181);
