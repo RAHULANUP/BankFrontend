@@ -20,7 +20,7 @@
 }
 input{
     width:25rem;
-    padding:1rem;
+    padding:1.5rem;
     margin:1rem;
 }
 
@@ -29,6 +29,7 @@ h1 {
     margin: 0 0 2rem 0;
     color: #333;
     font-weight: 600;
+    font-size:3rem;
 }
 
 .account-info{
@@ -46,7 +47,7 @@ h1 {
 .btn{
     width: 93%;
     margin:1rem;
-    padding:1rem;
+    padding:1.5rem;
     color:rgb(255, 255, 255);
     background-color:rgb(121,39,181);
 }
